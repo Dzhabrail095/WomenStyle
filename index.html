@@ -1,21 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<title>Women Style</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	<style>
+		@media only screen and (min-width: 1000px) {
+			.container {
+				width: 1000px;
+			}
+		}
+	</style>
+
 </head>
+
 <body>
-    <h1>MySite</h1>
-    <p>Этой мой сайт</p>
-    <p>
-        <a href="#">Главная</a> |
-        <a href="#">Услуги</a> |
-        <a href="#">Галерея</a> |
-        <a href="#">О Компании</a> |
-        <a href="#">Контакты</a> |
-    </p>
-    <hr>
-    <p>&copy; Все права защищиены 2026</p>
+	<header>
+		<div style="background: #eee;">
+			<div class="container block md:flex flex justify-between items-center py-4">
+				<div>
+					<!-- Лог и слоган -->
+					<span>Добро пожаловать, гость!</span> |
+					<a href="">Акции</a> |
+					<a href="">Распродажа</a> |
+					<a href="">Розыгрыши</a> |
+					<a href="register.html">Регистрация</a>
+				</div>
+				<div>
+					<!-- Социальные сети -->
+					<a href="">Instagram</a> |
+					<a href="">WhatsApp</a> |
+					<a href="">YouTube</a> |
+					<a href="">OK</a>
+				</div>
+			</div>
+		</div>
+		<div class="py-8" style="border-bottom: 1px solid #eee;">
+			<div class="container block md:flex flex items-center content-between">
+				<div class="logo">
+					<h2 class="m-0" style="color: var(--primary);">Women <span>Style</span></h2>
+					<p class="m-0"><i>Магазин женской одежды</i></p>
+				</div>
+
+				<!-- Поисковик -->
+				<div class="search">
+					<form>
+						<input type="text" placeholder="Поиск по сайту">
+						<select>
+							<option>Одежда</option>
+							<option>Aксессуары</option>
+							<option>Украшения</option>
+						</select>
+						<input type="submit" value="Найти">
+					</form>
+				</div>
+
+				<div class="worktime">
+					<!-- График работы -->
+					<h3 style="color: var(--primary);" class="m-0">10:00 - 19:00</h3>
+					<p class="m-0">Без выходных</p>
+				</div>
+				<div class="address">
+					<!-- Адрес -->
+					<h3 style="color: var(--primary);" class="m-0">г.Грозный</h3>
+					<p class="m-0">ул. Примерная 123</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div style="background: #eee;">
+			<div class="container md:flex py-4 flex items-center content-between">
+				<!-- Меню ссылки -->
+				<a href="index.html">Главная</a>
+				<a href="catalog.html">Каталог</a>
+				<a href="partner.html">Партнеры</a>
+				<a href="gallery.html">Галерея</a>
+				<a href="about.html">О Магазине</a>
+				<a href="contact.html">Контакты</a>
+			</div>
+		</div>
+		<br><br>
+	</header>
+
+	<section style="padding: 0;">
+		<br><br>
+		<div class="container md:flex">
+			<!-- Картинка / Баннер -->
+			<img src="assets/images/i.webp" width="600">
+		</div>
+	</section>
+
+
+	<!-- End: Раздел контакты -->
+
+	<footer>
+		<div class="container block md:-flex flex">
+			<div class="row flex items-center content-between">
+				<div class="col-1-4">
+					<h1 style="color: var(--primary);">Women <span style="color: var(--secondary);">Style</span></h1>
+					<p style="color: #555;"><i>Магазин женской одежды</i></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt.</p>
+				</div>
+				<div class="col-1-4">
+					<h4>Основные разделы</h4>
+					<ul>
+						<li><a href="about.html">О Магазине</a></li>
+						<li><a href="blog.html">Новости</a></li>
+						<li><a href="jobs.html">Вакансии</a></li>
+						<li><a href="opt.html">Оптовикам</a></li>
+						<li><a href="contact.html">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-1-4">
+					<h4>Каталог</h4>
+					<ul>
+						<li><a href="catalog.html#cloth">Одежда</a></li>
+						<li><a href="catalog.html#shoes">Обувь</a></li>
+						<li><a href="catalog.html#summer">Весенняя</a></li>
+						<li><a href="catalog.html#complect">Комплекты</a></li>
+						<li><a href="catalog.html#gifts">Подарки</a></li>
+					</ul>
+				</div>
+				<div class="col-1-4">
+					<h4>Полезные ссылки</h4>
+					<ul>
+						<li><a href="newsletter.html">Рассылки</a></li>
+						<li><a href="tips.html">Советы по уходу</a></li>
+						<li><a href="hot.html">Акции и распродажа</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="faq.html">Вопросы</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<p style="text-align: center;">&copy; Все права защищены 2020 - <span id="curYear">2023</span>. Создания
+					сайтов <a href=""> My Web Studio</a></p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// Вставитьь текущий год
+		// 1. Получить элемент
+		// var myYear = document.getElementById('curYear')
+
+		// 2. Получить текущий год
+		// var yearNow = new Date().getFullYear();
+
+		// 3. Изменить значение
+		// myYear.innerHTML = yearNow;
+
+		// Короткий способ
+		document.getElementById('curYear').innerHTML = new Date().getFullYear();
+
+
+		// Узнать пользователя.
+		// var username = document.getElementById('user');
+
+		// var name = prompt("Как тебя зовут?");
+
+		username.innerHTML = name;
+	</script>
+
 </body>
+
 </html>
